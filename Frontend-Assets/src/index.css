@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pop-enter {
+	animation: scaleBox 1s ease-out; /* You can adjust the duration and easing as needed */
+	animation-fill-mode: forwards; /* Keeps the final state after the animation completes */
+}
+@keyframes scaleBox {
+	0% {
+		transform: translateX(10%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.active {
+	background: transparent;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(0, 132, 255);
+	border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(1, 74, 142);
+}
